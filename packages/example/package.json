@@ -1,0 +1,35 @@
+{
+	"name": "example",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@web3-react/core": "^8.2.0",
+		"@web3-react/metamask": "^8.2.1",
+		"ahooks": "^3.7.8",
+		"bignumber.js": "^9.1.1",
+		"krav-sdk-beta": "workspace:^",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.15",
+		"@types/react-dom": "^18.2.7",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
+		"@typescript-eslint/parser": "^6.0.0",
+		"@unocss/preset-uno": "^0.55.7",
+		"@vitejs/plugin-react-swc": "^3.3.2",
+		"eslint": "^8.45.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.3",
+		"typescript": "^5.0.2",
+		"unocss": "^0.55.7",
+		"vite": "^4.4.5"
+	}
+}

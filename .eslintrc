@@ -1,0 +1,55 @@
+{
+	"extends": [
+		/* "plugin:prettier/recommended", */
+		"plugin:react-hooks/recommended",
+		"alloy",
+		"alloy/react",
+		"alloy/typescript"
+	],
+	// "plugins": ["unused-imports" /*,"prettier"*/],
+	"parserOptions": {
+		// "project": "tsconfig.json",
+		"parser": {
+			"js": "@babel/eslint-parser",
+			"jsx": "@babel/eslint-parser",
+			"ts": "@typescript-eslint/parser",
+			"tsx": "@typescript-eslint/parser"
+			// Leave the template parser unspecified, so that it could be determined by `<script lang="...">`
+		}
+	},
+	"env": {},
+	"globals": {},
+	"rules": {
+		"no-param-reassign": "off",
+		"no-undef": "off",
+		"prefer-promise-reject-errors": "off",
+		"interface-over-type-literal": "off",
+		"@typescript-eslint/consistent-type-definitions": "off",
+		"react/jsx-no-useless-fragment": "off",
+		"@typescript-eslint/consistent-type-assertions": "off",
+		"vue/v-on-event-hyphenation": "off",
+		"vue/prefer-true-attribute-shorthand": "off",
+		"vue/define-macros-order": "off",
+		"no-unused-vars": "off", // or
+		"@typescript-eslint/no-unused-vars": "off",
+		// "unused-imports/no-unused-imports": "warn",
+		// "unused-imports/no-unused-vars": [
+		//   "off",
+		//   { "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+		// ],
+		"vue/v-on-function-call": "off",
+		"@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+		"max-params": "off",
+		"@typescript-eslint/no-invalid-void-type": "off",
+		"react/no-unstable-nested-components": "off",
+		"react/no-children-prop": "off",
+		"unused-imports/no-unused-imports": "off",
+		"unused-imports/no-unused-vars": [
+			"off",
+			{ "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+		],
+		"max-nested-callbacks": "off",
+		"@typescript-eslint/no-empty-interface": "off",
+		"complexity": "off"
+	}
+}
